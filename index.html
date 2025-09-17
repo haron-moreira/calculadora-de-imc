@@ -1,33 +1,14 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Calculadora IMC</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="data">
-                <div class="form">
-                    <form>
-                        <div class="row">
-                            <label>Altura:</label>
-                            <input type="text" id="altura" placeholder="Digite sua altura (em metros)" />
-                        </div>
-                        <div class="row">
-                            <label>Peso:</label>
-                            <input type="text" id="peso" placeholder="Digite seu peso (em kg)" />
-                        </div>
-                        <div class="row">
-                            <button type="submit" id="calcular">Calcular IMC</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="data">
-                <p>Seu IMC &eacute; <span id="imc"></span></p>
-                <div id="tabela-imc-container"></div>
-            </div>
-        </div>
-    </body>
-    <script lang="text/javascript" src="index.js"></script>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Calculadora de IMC" />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 </html>
