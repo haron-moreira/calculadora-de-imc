@@ -53,7 +53,7 @@ class Nutricionista extends Pessoa {
 }
 
 function calculaImc(nutricionista: Nutricionista): Promise<ImcResponse> {
-  return fetch("http://localhost:3000/imc/calculate", {
+  return fetch("http://localhost:3008/imc/calculate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
